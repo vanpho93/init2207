@@ -1,7 +1,7 @@
-function sayHello(name) {
-    name = name ? name : 'NodeJS';
+function sayHello(name = 'NodeJS') {
+    // name = name ? name : 'NodeJS';
     console.log('Xin chao, toi la ' + name);
 }
 
 sayHello('Pho');
-sayHello();
+sayHello(null);
