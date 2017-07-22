@@ -32,3 +32,17 @@ function inSoChinhPhuong() {
         if (dieuKien) console.log(i); 
     }   
 }
+
+function inSo(fn) {
+    for(let i = 1; i <= 100; i++) {
+        const dieuKien = fn(i);
+        if (dieuKien) console.log(i); 
+    }   
+}
+
+function kiemTraChinhPhuong(a) { 
+    return Math.sqrt(a) % 1 === 0 
+};
+
+inSo(i => i % 4 === 1);
+inSo(i => i % 2 === 0);
